@@ -39,6 +39,11 @@
         <div class="container">
             <div class="content">
                 <div class="title">Laravel 5</div>
+                <?php
+                foreach ($bs as $b) {
+                    echo $b->NAME;
+                }
+                ?>
             </div>
         </div>
     </body>
