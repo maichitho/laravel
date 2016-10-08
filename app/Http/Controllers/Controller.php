@@ -17,6 +17,7 @@ class Controller extends BaseController
     public function index(Request $request)
     {
         $bs=MBusiness::all();
+        \Log::info('Showing user profile for user: ');
         return view('welcome', ['bs'=>$bs]);
     }
 }
